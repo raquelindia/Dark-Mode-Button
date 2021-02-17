@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dark Mode Button</title>
+  </head>
+  <body>
+    
+    <h1 id="invertColor">Dark Mode Button</h1>
+   <p>Press this button to use dark mode</p>
+    <h2>Welcome to Dark Mode!</h2>
+    <div id="divButton">
+    <button id="changetextColor" onclick = "newColor()">GO!</button>
+    </div>
+    <style>
+        body {
+          background-color: #FAFAFA;
+        }
+
+        button {
+          background-color: grey;
+          color: white;
+          height: 100px;
+          width: 200px;
+          border-radius: 12px;
+          font-family: Impact;
+          font-size: 40px;
+        }
+
+        h1 {
+          font-family: Tahoma;
+          text-align: center;
+          padding-top: 100px;
+          font-size: 40px;
+        }
+
+        p {
+          text-align: center;
+          font-family: Tahoma;
+          font-size: 20px;
+          
+        }
+
+        #divButton {
+          display: flex;
+          justify-content: center;
+        }
+        h2 {
+          color: #FAFAFA;
+          text-align: center;
+          font-size: 40px;
+          font-family: Tahoma;
+        }
+        </style>
+    <script>
+      function changeColor(color){
+        document.body.style.background = color;
+      }
+      function newColor(){
+        changeColor('black');
+      }
+    
+     
+    </script>
+  </body>
+</html>
