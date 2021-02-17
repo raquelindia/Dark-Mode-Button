@@ -1,1 +1,1 @@
-This button chnages the page to dark mode.
+This button changes the page to dark mode.
